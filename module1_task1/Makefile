@@ -1,7 +1,7 @@
 build:
-	hugo > /dev/null 2>&1
+		hugo > /dev/null 2>&1
 clean:
-	rm -r ./dist/*
+		rm -r ./dist/*
 post:
-	hugo new posts/$(POST_NAME).md
-	echo "title=$(POST_TITLE)" && $(POST_NAME).md
+		hugo new posts/$(POST_NAME).md
+		echo "title=$(POST_TITLE)" $(POST_NAME).md
