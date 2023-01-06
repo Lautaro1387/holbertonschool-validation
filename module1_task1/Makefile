@@ -1,5 +1,5 @@
 build:
-		hugo > /dev/null 2>&1
+		hugo
 clean:
 		rm -r ./dist/*
 post:
