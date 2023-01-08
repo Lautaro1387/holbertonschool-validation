@@ -1,4 +1,4 @@
-name: GitHub Actions - module 3_task0
+name: module3_task0
 on:
   schedule:
     - cron: "0 0 * * *"
