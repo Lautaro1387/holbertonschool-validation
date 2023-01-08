@@ -1,0 +1,16 @@
+name: module3_task1
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: cd module3_task1 && ./setup.sh
+      - run: cd module3_task1 && make build
+      - run: cd module3_task1 && make clean
+      - run: cd module3_task1 && make 
+
+
