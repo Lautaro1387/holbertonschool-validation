@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: GitHub Actions - module 3_task0
 on:
   schedules:
     - cron: "0 0 * * *"
@@ -7,4 +7,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: "sss"
+      - uses: actions/checkout@v3
+      - run: cd module3_task0 && make help
