@@ -9,7 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: cd module3_task1 && ./setup.sh
-      - run: make build
       - run: cd module3_task1 && make clean
       - run: cd module3_task1 && make POST_NAME=name POST_TITLE=title post
       - run: cd module3_task1 && make help
