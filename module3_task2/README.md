@@ -7,3 +7,6 @@
    - make clean
    - make post
    - make help
+   - make hello
+   - make package
+   - make lint
