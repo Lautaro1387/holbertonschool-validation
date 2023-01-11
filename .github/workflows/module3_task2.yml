@@ -1,4 +1,4 @@
-name: module3_task1
+name: module3_task2
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -16,3 +16,9 @@ jobs:
       - run: cd module3_task1 && make hello
       - run: cd module3_task1 && make package
       - run: cd module3_task1 && make lint
+      - run: cd module3_task1 && make unit-tests
+      - run: cd module3_task1 && make integration-tests
+      - run: cd module3_task1 && make validate
+        uses: actions/upload-artifact@v3
+        with:
+          path: module3_task2/
