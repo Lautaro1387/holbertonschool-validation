@@ -19,6 +19,6 @@ jobs:
       - run: cd module3_task1 && make unit-tests
       - run: cd module3_task1 && make integration-tests
       - run: cd module3_task1 && make validate
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
         with:
           path: module3_task2/

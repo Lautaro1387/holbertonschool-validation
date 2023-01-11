@@ -12,3 +12,6 @@ package: ## package create a file named "awesome-website.zip" containing the bin
 	zip -r awesome-website.zip ./dist awesome-api
 lint: ## updated to lint the file 
 	markdownlint --fix DEPLOY.md
+unit-tests: ## unit tests
+integration-tests: ## integration tests
+validate: ## validate
