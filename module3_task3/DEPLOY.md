@@ -17,3 +17,6 @@ For example (specifying a different location):
 ```./awesome-api >> /path/to/logs/awesome-api.log```
 ## How to “quickly” verify that the application is running (healthcheck)?
 curl http://localhost:8000/health
+
+The file awesome-website.zip contains the binary file awesome-api.
+The app now has a GitHub tag with the version for deploy it.
