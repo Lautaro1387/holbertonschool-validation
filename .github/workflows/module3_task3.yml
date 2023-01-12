@@ -19,6 +19,3 @@ jobs:
       - run: cd module3_task3 && make unit-tests
       - run: cd module3_task3 && make integration-tests
       - run: cd module3_task3 && make validate
-      - uses: softprops/action-gh-release
-        with:
-          path: module3_task3/
