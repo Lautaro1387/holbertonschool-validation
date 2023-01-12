@@ -22,3 +22,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           path: module3_task3/
+      - uses: softprops/action-gh-release
+        with:
+          path: module3_task3/
