@@ -10,7 +10,7 @@ hello: ## hello my friend
 	echo "Hello :)"
 package: ## Create the zip file
 	zip -r awesome-website.zip awesome-api dist/
-lint: ## updated to lint the file 
+lint: ## updated to lint the file
 	markdownlint --fix DEPLOY.md
 unit-tests: ## unit tests
 integration-tests: ## integration tests
