@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
-      - run: cd module3_task1 && sudo ./setup.sh
-      - run: cd module3_task1 && make build
-      - run: cd module3_task1 && make clean
-      - run: cd module3_task1 && make POST_NAME=name POST_TITLE=title post
-      - run: cd module3_task1 && make help
-      - run: cd module3_task1 && make hello
-      - run: cd module3_task1 && make package
-      - run: cd module3_task1 && make lint
-      - run: cd module3_task1 && make unit-tests
-      - run: cd module3_task1 && make integration-tests
-      - run: cd module3_task1 && make validate
+      - run: cd module3_task2 && sudo ./setup.sh
+      - run: cd module3_task2 && make build
+      - run: cd module3_task2 && make clean
+      - run: cd module3_task2 && make POST_NAME=name POST_TITLE=title post
+      - run: cd module3_task2 && make help
+      - run: cd module3_task2 && make hello
+      - run: cd module3_task2 && make package
+      - run: cd module3_task2 && make lint
+      - run: cd module3_task2 && make unit-tests
+      - run: cd module3_task2 && make integration-tests
+      - run: cd module3_task2 && make validate
       - uses: actions/upload-artifact@v3
         with:
           path: module3_task2/
