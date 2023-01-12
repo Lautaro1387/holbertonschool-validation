@@ -1,4 +1,4 @@
-name: module3_Task3
+name: module3_task3
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
-      - run: cd module3_Task3 && ./setup.sh
-      - run: cd module3_Task3 && make build
-      - run: cd module3_Task3 && make clean
-      - run: cd module3_Task3 && make POST_NAME=name POST_TITLE=title post
-      - run: cd module3_Task3 && make help
-      - run: cd module3_Task3 && make hello
-      - run: cd module3_Task3 && make package
-      - run: cd module3_Task3 && make lint
-      - run: cd module3_Task3 && make unit-tests
-      - run: cd module3_Task3 && make integration-tests
-      - run: cd module3_Task3 && make validate
+      - run: cd module3_task3 && ./setup.sh
+      - run: cd module3_task3 && make build
+      - run: cd module3_task3 && make clean
+      - run: cd module3_task3 && make POST_NAME=name POST_TITLE=title post
+      - run: cd module3_task3 && make help
+      - run: cd module3_task3 && make hello
+      - run: cd module3_task3 && make package
+      - run: cd module3_task3 && make lint
+      - run: cd module3_task3 && make unit-tests
+      - run: cd module3_task3 && make integration-tests
+      - run: cd module3_task3 && make validate
       - uses: actions/upload-artifact@v3
         with:
-          path: module3_Task3/
+          path: module3_task3/
