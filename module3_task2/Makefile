@@ -8,8 +8,8 @@ help: ## Show help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 hello: ## hello my friend
 	echo "Hello :)"
-package: ## package create a file named "awesome-website.zip" containing the binary "awesome-api" and the directory "dist/".
-	zip -r awesome-website.zip awesome-api dist/
+package: ## package create a file named awesome-website.zip.
+	zip -r awesome-website.zip dist/ awesome-api
 lint: ## updated to lint the file 
 	markdownlint --fix DEPLOY.md
 unit-tests: ## unit tests
